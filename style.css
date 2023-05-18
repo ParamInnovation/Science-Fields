@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body,
+html {
+    height: 100%;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    height: 50px;
+    z-index: 100;
+}
+
+.top-nav ul {
+    display: flex;
+    gap: 34px;
+    list-style-type: none;
+    margin-left: 6.7%;
+    margin-top: 35px;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.top-nav li {
+    display: inline;
+}
+
+.top-nav a {
+    display: inline-block;
+    font-family: 'DM Sans';
+    color: #fff;
+
+    text-transform: capitalize;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.top-nav a:hover {
+    color: #ddd;
+    background-color: #99999960;
+}
+
+.top-nav a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+
+.first {
+    background-image: url('./public/Back/Bg1.svg');
+    background-color: #352b5f;
+}
+
+.first div div {
+    background: url('public/Objects/Ob1.svg') 50% 50% fixed;
+}
+
+.second {
+    background-image: url("public/Back/Bg2.svg");
+    background-color: #e5e3f1;
+}
+
+.second div div {
+    background: url('public/Objects/Ob2.svg') 50% 50% fixed;
+}
+
+.third {
+    background-image: url('public/Back/Bg3.svg');
+    background-color: #eae5f1;
+}
+
+.third div div {
+    background: url('public/Objects/Ob3.svg') 50% 50% fixed;
+}
+
+.fourth {
+    background-image: url("public/Back/Bg4.svg");
+    background-color: #ffd2c5;
+}
+
+.fourth div div {
+    background: url('public/Objects/Ob4.svg') 50% 50% fixed;
+}
+
+.fifth {
+    background-image: url("public/Back/Bg5.svg");
+    background-color: #ffd2c5;
+}
+
+.fifth div div {
+    background: url('public/Objects/Ob5.svg') 50% 50% fixed;
+}
+
+.sixth {
+    background-image: url("public/Back/Bg6.svg");
+    background-color: #ffd2c5;
+}
+
+.sixth div div {
+    background: url('public/Objects/Ob6.svg') 50% 50% fixed;
+}
+
+.seventh {
+    background-image: url("public/Back/Bg7.svg");
+    background-color: #ffd2c5;
+}
+
+.seventh div div {
+    background: url('public/Objects/Ob7.svg') 50% 50% fixed;
+}
+
+.eight {
+    background-image: url("public/Back/Bg8.svg");
+    background-color: #ffd2c5;
+}
+
+.eight div div {
+    background: url('public/Objects/Ob8.svg') 50% 50% fixed;
+}
+
+.ninth {
+    background-image: url("public/Back/Bg9.svg");
+    background-color: #ffd2c5;
+}
+
+.ninth div div {
+    background: url('public/Objects/Ob9.svg') 50% 50% fixed;
+}
+
+.tenth {
+    background-image: url("public/Back/Bg10.svg");
+    background-color: #ffd2c5;
+}
+
+.tenth div div {
+    background: url('public/Objects/Ob10.svg') 50% 50% fixed;
+}
+
+.eleventh {
+    background-image: url("public/Back/Bg11.svg");
+    background-color: #ffd2c5;
+}
+
+.eleventh div div {
+    background: url('public/Objects/Ob11.svg') 50% 50% fixed;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seventh,
+.eight,
+.ninth,
+.tenth,
+.eleventh {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.first div div,
+.second div div,
+.third div div,
+.fourth div div,
+.fifth div div,
+.sixth div div,
+.seventh div div,
+.eight div div,
+.ninth div div,
+.tenth div div,
+.eleventh div div {
+    background-position: center;
+    height: 120%;
+    background-size: 80%;
+    background-position-x: initial;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 10;
+    color: black;
+    background-attachment: fixed;
+}
+
+.story {
+    margin: 0 auto;
+    min-width: 980px;
+    overflow: auto;
+    width: 100%;
+}
+
+.side-nav {
+    position: fixed;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-nav ul li {
+    margin-bottom: 20px;
+    height: 15px;
+}
+
+.side-nav ul li a {
+    display: block;
+    background: #AD7B10 0% 0% no-repeat padding-box;
+    height: 12px;
+    width: 12px;
+    opacity: 0.5;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.side-nav ul li a p {
+    color: #AD7B10;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    position: relative;
+    /* top: -14px; */
+    text-align: end;
+    width: 122px;
+    height: 29px;
+    left: -91px;
+}
+
+.side-nav ul li a p {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* Adjust the timing as needed */
+    transform: translateX(0);
+    /* Adjust the distance as needed */
+    opacity: 0;
+}
+
+.side-nav ul li a:hover p {
+    transform: translateX(-45px);
+    opacity: 1;
+}
+
+
+.side-nav ul li a:hover {
+    opacity: 1 !important;
+}
+
+/* active class */
+.side-nav ul li a.active {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+}
